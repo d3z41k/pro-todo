@@ -19,6 +19,8 @@ Route::get('/tasks', 'TaskController@index');
 Route::post('/task', 'TaskController@store');
 Route::delete('/task/{task}', 'TaskController@destroy');
 
+Route::get('/info', 'InfoController@index');
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 // Маршруты аутентификации...
